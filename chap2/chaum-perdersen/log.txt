@@ -1,0 +1,52 @@
+matdubuisson@rogy:~/Desktop$ python3
+Python 3.13.3 (main, Aug 14 2025, 11:53:40) [GCC 14.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 17**4 % 47
+2
+>>> x = 11
+>>> g1 = 17
+>>> g2 = 17**4 % 47
+>>> g2
+2
+>>> h1 = g1**x%p
+Traceback (most recent call last):
+  File "<python-input-5>", line 1, in <module>
+    h1 = g1**x%p
+               ^
+NameError: name 'p' is not defined
+>>> p = 47
+>>> h1 = g1**x % p
+>>> h2 = g2**x % p
+>>> h1
+6
+>>> h2
+27
+>>> r = 19
+>>> g1**r % p
+24
+>>> a2=g2**r % p
+>>> a1=g1**r % p
+>>> a1
+24
+>>> a2
+3
+>>> e = 41308
+>>> f = (r + e * x) % q
+Traceback (most recent call last):
+  File "<python-input-18>", line 1, in <module>
+    f = (r + e * x) % q
+                      ^
+NameError: name 'q' is not defined
+>>> q = 23
+>>> f = (r + e * x) % q
+>>> f
+19
+>>> g1**f % p
+24
+>>> g2**f % p
+3
+>>> (a1 * h1**e) % p
+24
+>>> (a2 * h2**e) % p
+3
+>>> 

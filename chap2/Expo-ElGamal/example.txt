@@ -1,0 +1,66 @@
+matdubuisson@rogy:~/Desktop/crypto/Expo-ElGamal$ python3
+Python 3.13.3 (main, Aug 14 2025, 11:53:40) [GCC 14.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> g = 17
+>>> p = 47
+>>> q = 23
+>>> x = 14
+>>> h = g**x % p
+>>> h
+9
+>>> r1 = 7
+>>> r2 = 19
+>>> r3 = 22
+>>> mp1 = g**m1
+KeyboardInterrupt
+>>> m1 = 1
+>>> m2 = 0
+>>> m3 = 1
+>>> mp1 = g**m1 % p
+>>> mp2 = g**m2 % p
+>>> mp3 = g**m3 % p
+>>> (mp1, mp2, mp3)
+(17, 1, 17)
+>>> c11 = g**r1 % p
+>>> c12 = g**r2 % p
+>>> c13 = g**r3 % p
+>>> (c11, c12, c13)
+(3, 24, 36)
+>>> c21 = mp1 * h**r1 % p
+>>> c22 = mp2 * h**r2 % p
+>>> c23 = mp3 * h**r3 % p
+>>> (c21, c22, c23)
+(3, 42, 28)
+>>> c1p = c11 * c12 * c13 % p
+>>> c1p
+7
+>>> c2p = c21 * c22 * c23 % p
+>>> c2pµ
+Traceback (most recent call last):
+  File "<python-input-27>", line 1, in <module>
+    c2pµ
+NameError: name 'c2pμ' is not defined
+>>> c2p
+3
+>>> s = c1p**x % p
+>>> s
+34
+>>> for s_1 in range(1, p):
+...     if s * s_1 % p == 1:
+...         break
+...         
+>>> s_1
+18
+>>> mpp = c2p * s_1 % p
+>>> mpp
+7
+>>> from sympy.ntheory import discrete_log
+... 
+>>> sum_mi = discrete_log(p, mpp, g)
+>>> su
+Traceback (most recent call last):
+  File "<python-input-37>", line 1, in <module>
+    su
+NameError: name 'su' is not defined. Did you mean: 's'?
+>>> sum_mi
+2

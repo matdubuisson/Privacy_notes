@@ -1,0 +1,52 @@
+matdubuisson@rogy:~/Desktop/crypto/DKG$ python3
+Python 3.13.3 (main, Aug 14 2025, 11:53:40) [GCC 14.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x1 = 14
+>>> x2 = 16
+>>> x3 = 3
+>>> p = 47
+>>> g = 17
+>>> q = 23
+>>> h1 = g**x1 % p
+>>> h2 = g**x2 % p
+>>> h3 = g**x3 % p
+>>> h1
+9
+>>> h2
+16
+>>> h3
+25
+>>> h = h1 * h2 * h3 % p
+>>> h
+28
+>>> r = 7
+>>> c1 = g**r % p
+>>> c1
+3
+>>> m = 42
+>>> c2 = m * h**r % p
+>>> c2
+9
+>>> d1 = c1**x1 % p
+>>> d2 = c1**x2 % p
+>>> d3 = c1**x3 % p
+>>> d1
+14
+>>> d2
+32
+>>> d3
+27
+>>> d = (d1 * d2 * d3) % p
+>>> d
+17
+>>> for i in range(1, p):
+...    if i * 17 % p == 1:
+...       print(i)
+...       
+36
+>>> d_1 = 36
+>>> d * d_1 % p
+1
+>>> m = c2 * d_1 % p
+>>> m
+42
