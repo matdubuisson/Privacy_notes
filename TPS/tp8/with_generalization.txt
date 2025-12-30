@@ -1,0 +1,42 @@
+#############################################################
+Test K anonymity for diabetes1
+Test combination : ('location',)
+k-anonimity : 188
+Test combination : ('gender',)
+k-anonimity : 162
+Test combination : ('location', 'gender')
+k-anonimity : 81
+#############################################################
+Test K anonymity for diabetes2
+Test combination : ('height',)
+k-anonimity : 14
+Test combination : ('frame',)
+k-anonimity : 100
+Test combination : ('waist',)
+k-anonimity : 13
+#############################################################
+Test K anonymity for both diabetes1 and diabetes2
+Test combination : ('location',)
+k-anonimity : 188
+Test combination : ('gender',)
+k-anonimity : 162
+Test combination : ('height',)
+k-anonimity : 14
+Test combination : ('frame',)
+k-anonimity : 100
+Test combination : ('waist',)
+k-anonimity : 13
+Test combination : ('location', 'gender')
+k-anonimity : 81
+Test combination : ('location', 'height')
+k-anonimity : 4
+Test combination : ('location', 'frame')
+k-anonimity : 38
+Test combination : ('location', 'waist')
+k-anonimity : 3
+Test combination : ('gender', 'frame')
+k-anonimity : 34
+Test combination : ('gender', 'waist')
+k-anonimity : 5
+Test combination : ('location', 'gender', 'frame')
+k-anonimity : 10
